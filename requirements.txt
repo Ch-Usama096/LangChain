@@ -1,5 +1,7 @@
 # Add the All Import Modules
 numpy
-#pandas
-#scikit-learn
-#langchain
+pandas
+scikit-learn
+langchain
+PYPDF
+
