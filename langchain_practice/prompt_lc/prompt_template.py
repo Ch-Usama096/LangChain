@@ -14,6 +14,21 @@ promptData1 = PromptTemplate(
 # Method No 2
 promptData2 = PromptTemplate.from_template("Tell me about Python Language").format()
 
+# # Display the Prompt
+# print(f"\nHere is the first Method Prompt  : \n{promptData1}\n")
+# print(f"Here is the Second Method Prompt : \n{promptData2}\n")
+
+
+# Example No 2 --> Prompt Having One Input Variable
+
+# Method No 1
+promptSInput1 = PromptTemplate(
+    input_variables = ["language_name"] , template = "Tell me about {language_name} language."
+).format(language_name = "python")
+
+# Method No 2:
+promptSInput2 = PromptTemplate.from_template("tell me about {language_name} language.").format(language_name = "java")
+
 # Display the Prompt
-print(f"\nHere is the first Method Prompt  : \n{promptData1}\n")
-print(f"Here is the Second Method Prompt : \n{promptData2}\n")
+print(f"\nHere is the First Method Prompt : \n{promptSInput1}\n")
+print(f"Here is the Second Method Prompt : \n{promptSInput2}\n")
