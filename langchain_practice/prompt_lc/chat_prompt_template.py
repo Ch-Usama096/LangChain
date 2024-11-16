@@ -30,6 +30,6 @@ ChatModelPrompt2 = ChatPromptTemplate.from_messages([
 ]).format(input = "English" , output = "Spanish" , text = "My Name is Usama Husnian")
 
 # Display the Chat Model Prompt
-print(f"\nHere is the Prompt for Chat Model : \n{ChatModelPrompt2}\n")
+# print(f"\nHere is the Prompt for Chat Model : \n{ChatModelPrompt2}\n")
 
 
