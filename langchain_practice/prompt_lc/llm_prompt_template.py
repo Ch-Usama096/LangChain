@@ -4,6 +4,9 @@ from langchain.text_splitter import CharacterTextSplitter , RecursiveCharacterTe
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain.prompts import PromptTemplate
 
+
+#                                   Prompt For LLM
+
 # Example No 1: --> Prompt Without Inputs Variables
 
 # method No 1
@@ -47,5 +50,7 @@ multiplePromtInput2 = PromptTemplate.from_template(
 ).format(language_name = "java" , topic = "function")
 
 # Display the Prompt
-print(f"\nHere is the First Method Prompt : \n{mulitplePromptInput1}\n")
-print(f"Here is the Second Method Prompt : \n{multiplePromtInput2}\n")
+# print(f"\nHere is the First Method Prompt : \n{mulitplePromptInput1}\n")
+# print(f"Here is the Second Method Prompt : \n{multiplePromtInput2}\n")
+
+
