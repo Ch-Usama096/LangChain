@@ -30,5 +30,22 @@ promptSInput1 = PromptTemplate(
 promptSInput2 = PromptTemplate.from_template("tell me about {language_name} language.").format(language_name = "java")
 
 # Display the Prompt
-print(f"\nHere is the First Method Prompt : \n{promptSInput1}\n")
-print(f"Here is the Second Method Prompt : \n{promptSInput2}\n")
+# print(f"\nHere is the First Method Prompt : \n{promptSInput1}\n")
+# print(f"Here is the Second Method Prompt : \n{promptSInput2}\n")
+
+
+# Example No 3 --> Prompt Having Multiple Inputs
+
+# Method No 1
+mulitplePromptInput1 = PromptTemplate(
+    input_varaibles = ["language_name" , "topic"] , template = "Tell me about {language_name} {topic} information."
+).format(language_name = "python" , topic = "function")
+
+# Method No 2
+multiplePromtInput2 = PromptTemplate.from_template(
+    "Tell me about {language_name} {topic} information."
+).format(language_name = "java" , topic = "function")
+
+# Display the Prompt
+print(f"\nHere is the First Method Prompt : \n{mulitplePromptInput1}\n")
+print(f"Here is the Second Method Prompt : \n{multiplePromtInput2}\n")
