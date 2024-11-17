@@ -5,8 +5,8 @@ scikit-learn
 langchain
 PYPDF
 sentence-transformers
-langchain-community
-langchain-huggingface
+langchain-community 
+langchain-huggingface 
 langchain_ollama
-
+faiss-cpu
 
